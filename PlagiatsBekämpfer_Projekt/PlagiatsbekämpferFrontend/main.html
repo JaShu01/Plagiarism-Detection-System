@@ -1,0 +1,88 @@
+<!DOCTYPE html> 
+<!--HTML5 Code Einstellung-->
+<html lang="de">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Plagiatserkennung System</title> 
+    <!--Bestimmung der Seitenname-->
+    <link rel="stylesheet" type="text/css" href="design.css" /> 
+    <!--Verknüpfung mit CSS Datei-->
+    <script src="./funktions.js"></script>
+    <!--Verknüpfung mit Java Script Datei-->
+</head> 
+<body> 
+    <!--Webseiten Format Header,Body,Footer-->
+    <header class="page-Top">
+    <!--"Header" Aufbau von obere Teil des Pages-->
+        <div class="page-Top_design"> 
+            <!--Code Block Bestimmung-->
+            <img src="logo2.png"/>
+            <!--Logotyp Einfügen-->
+            <nav>
+            <!--Block Element für Navigation Links-->   
+              <a href="second_page.html" >Autors</a> 
+              <!--Verknüpfung zum zweite seite durch "Autors" Button-->
+            </nav>
+        </div>
+    </header>
+    
+    <div class="contents"> 
+         <!--Klasse zum Text Schreiben-->
+        <h1>Plagiatsprüfung</h1>  
+        <!--Haupttext-->
+        <p> Unsere Plagiatserkennung System prüft Ihren Text auf Plagiate basierend auf unseren Datenbank</p>
+        <!--Info zum Haupttext-->
+    </div>
+    <textarea id="text_area" oninput="counter()"></textarea>
+    <!--Text Area fürs Text schreiben + JS Funktion Counter bein eintippen-->
+    <p id="initial_wordnumber">0/1000</p>
+    <!--Identifizierung von Anfangswortanzhal-->
+    <button id="button">Plagiat prüfen</button>
+    <!--Taste zum Plagiatsprüfunf-->
+  
+  <script>
+    document.getElementById('button').addEventListener('click', checking);
+  </script>
+  <!--Taste ausführung durch "cheking" Funktion-->
+  
+    
+    
+    <div class="scale-bar"> 
+    <!--Leere Waage Grenzung Identifizierung zum Design-->
+        <div id="scale"></div>
+        <!--Waage Identifizierung zum Design-->
+    </div>
+    
+    <div id="plagiarism">Plagiarismus: 0%</div>
+    <!--Plagiarism Anfangsanzeige-->
+
+    
+
+    <div class="Shingles" >
+        <!--Neue Text Klasse Identifizierung-->
+        
+        <p class="part_1">Um die Tests auf Plagiate zu überprüfen, haben wir die <b>"Shingles"</b> -Methode verwendet.</p>
+        <p class="part_2">Mit Hilfe des Shingle Algorithmus kann erkannt werden, ob ein Text einzigartig ist. Eine Textpassage kann dann mit einer beliebigen anderen verglichen werden und auf Duplicate Content untersucht werden.</p>
+        <p>Shingles sind sich überschneidende Satzteile des Textes, die aus einer festgelegten Länge von Wörten bestehen.</p>
+        <p class="part_3">Ein Beispiel ist: "Es wäre sehr schön, eine gute Note in Web Anwendung zu bekomemn"</p>
+        <!--Text-->
+            
+        <p> <b>Shingle 1 = Es wäre sehr</p></b>
+        <p> <b>Shingle 2 = wäre sehr schön</p></b>
+        <p> <b>Shingle 3 = sehr schön eine</p></b>
+        <p> <b>Shingle 4 = schön eine gute</p></b>
+        <!--Text-->
+
+    </div>
+
+    <footer class="page-Bottom"> 
+    <!--Webseiten untere Teil-->
+        <div class="page-Top_design">
+            <img src="logo2.png"/>
+        </div>
+    </footer>
+    
+</body>
+</html>

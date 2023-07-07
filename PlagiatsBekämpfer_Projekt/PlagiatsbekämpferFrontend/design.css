@@ -1,0 +1,118 @@
+body {
+    margin: 0;  /*Abstand, so dass Top Linie an die ganze Seite geordnet wird  */
+}
+
+header {
+    background-color: black; /* Farbe von Top Linie*/
+    padding: 20px; /*Top Linie Größe*/
+}
+
+header img { /*Logotyp Größe Anpassung*/
+    height: 100px;
+    margin: 0 20px;
+}
+
+header nav a {
+    color: #fff; /*Farbe von "Autors Button*/
+    text-decoration: none; /*Autors Button Formatierung ohne Unterstrich*/
+}
+
+.page-Top_design{ 
+    align-items: flex-end; /*Positionierung von "Autors" am ende von Logo*/
+    display: flex; /*Positionierung von "Autors" nach dem Logo*/
+}
+
+.contents{
+    text-align: center; /* Text Positionierun im Center*/
+    margin: auto; /* Abstand an seite angepasst*/
+    padding: 50px; /*Abstand von Header und Textarea*/
+}
+
+.contents h1 {
+    font-size: 40px; /*Größer von Haupttext*/
+    
+}
+.contents_text {
+
+    text-align: center; /* Text Positionierun im Center*/
+    margin: auto; /* Abstand an seite angepasst*/
+    width: 50%; /*Breite*/
+    padding: 10px; /*Abstand von Header und Textarea*/
+    margin-top: 40px; /*Abstand von Haupttext*/
+}
+
+textarea { 
+    display: block; /*Textarea als Block gekenzeichnet*/
+    width: 70%; /*Textarea breite*/
+    height: 300px; /*Textarea höhe*/
+    margin: 20px auto; /*Textarea Center Platzierung*/ 
+    padding: 10px; /*Text in Textare schöner zu platzieren*/
+    border: 2px solid #000; /*Textarea Rahmen Dicke und Farbe*/
+    border-radius: 14px; /*Textarea Rahmen bisscen Kreisformiger zu machen*/
+}
+
+#initial_wordnumber{
+    position: absolute;
+    bottom: 30% ;
+    right: 100px;
+    
+    
+}
+
+#button {
+    background-color: black; /*Tasten Grund Farbe*/
+    color: #fff; /*Tasten Farbe*/
+    width: 35%; /*Tasten Breite*/
+    height: 70px; /*Tasten Höhe*/
+    margin: 60px auto ; /*Tasten Abstand*/
+    padding: 10px; /*Tasten Abstand von Oben-Unten*/
+    display: block; /*Tasten Fiksierung*/
+    font-size:20px; /*Tasten Textgrösse */
+    font-weight:bold; /*Tasten Text Dicke*/
+    cursor: pointer; /*Finger Druck Effekt*/
+    margin-bottom: 150px; /*Abstand von Waage*/ 
+}
+
+.scale-bar {
+    width: 100%; /*Waage an Seitenbreite angeordnet  */
+    height: 20px; /*Waagen Höhe  */
+    border: 1px solid #000; /*Rahmen */
+    border-radius: 10px; /* So dass Rahmen biischen runder werden */
+    margin-bottom: 30px; /* Abstand Unten  */
+    
+}
+
+#scale {
+    width: 0%; /* Anfangs Breite: Keine */
+    height: 100%; /* Angepasst an "Scale-bar" Höhe */
+    background-color: green; /* Anfangs Farbe */
+    transition: width 0.4s ease-in-out; /* Fülleffekt */
+}
+
+.Shingles {
+    padding: 20px; /*Shingles Text Abstand von anderen Webseite Teilen*/
+}
+
+.Shingles p {
+    
+    text-align: center; /*Text Platzierung*/
+    font-size: 16px; /*Text Größer*/
+    margin-bottom: 20px; /*Abstand Unten*/
+}
+
+.Shingles p.example { /*Änderung nur von Shingles Beispiel Text*/
+    font-weight: bold; /* Text Dicke*/
+    margin-bottom: 10px; /*Abstand Unten*/
+}
+
+footer { /*untere Seiten Teil*/
+    background-color: black; /*Grundfarbe*/
+    padding: 20px; /*Abstand*/
+    
+}
+
+footer img { /* Logotyp*/
+    height: 100px;
+    margin: 0 20px;
+}
+
